@@ -1,0 +1,80 @@
+
+.first_row  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header {
+    background: #006266;
+}
+header .logo {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+header :first {
+    display: flex;
+}
+
+header ul.nav {
+    float: right;
+    list-style: none;
+}
+
+header ul.nav li{
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover {
+    opacity: 0.5;
+}
+
+header .presentation {
+    margin: 50px 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ), url('../../img/snowboard.jpg') no-repeat;
+    width: 100%;
+    height: 410px;
+    background-size: cover;
+    background-position: top right;
+    background-blend-mode: multiply;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    position: relative;
+}
+
+header .presentation::after {
+    content: 'Megasport';
+    position: absolute;
+    top: 72px;
+    left: 175px;
+    min-width: 200px;
+    font-size: 72px;
+    font-weight: 600;
+    color: #b74747;
+    padding: 15px 10px;
+}
+
+header .presentation::before {
+    content: 'По низким ценам';
+    position: absolute;
+    top: 175px;
+    left: 190px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+}
+
+.show_image1 {
+    background: url('../../img/499.jpg') bottom right;
+    background-size: cover;
+    height: 200px;
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
